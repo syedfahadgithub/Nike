@@ -2,7 +2,7 @@ import React from 'react'
 
 const Body = () => {
     return (
-        <div className='flex items-center gap-5 '>
+        <div className='flex items-center gap-5 bg-zinc-100'>
             <div className='w-1/2 px-13 '>
                 <h1 className='text-[7vw] uppercase leading-[12vh] font-extrabold '>Your feet deserve the best</h1>
                 <p className='p-3 leading-[1.5vw] mt-7 text-zinc-600'>YOUR FEET DESERVE THE BEST AND WE’RE HERE TO <br /> HELP YOU WITH OUR SHOES.YOUR FEET DESERVE THE <br /> BEST AND WE’RE HERE TO HELP YOU WITH <br />OUR SHOES.</p>

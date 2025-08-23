@@ -8,6 +8,8 @@ import Location from './pages/Location'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
 import LocomotiveScroll from 'locomotive-scroll';
+import Login from './pages/Login'
+import Register from './pages/Register'
 const App = () => {
 
   const locomotiveScroll = new LocomotiveScroll();
@@ -21,10 +23,12 @@ const App = () => {
         <Route path='/location' element={<Location />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register/>}/>
       </Routes>
       <About />
       <Contact />
-      <Footer/>
+      <Footer />
     </div>
   )
 }

@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 const Contact = () => {
   return (
     <>
-      <div className='w-full h-screen '>
+      <div className='w-full h-screen bg-zinc-100'>
         <div className='flex gap-[25vw] p-15 py-30 text-zinc-700'>
           <div>
             <h1 className='text-2xl font-semibold'>Let's Get in <span className='text-blue-600 text-3xl font-extrabold'>Touch!</span></h1>
