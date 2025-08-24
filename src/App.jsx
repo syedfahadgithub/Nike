@@ -10,6 +10,8 @@ import Footer from './components/Footer'
 import LocomotiveScroll from 'locomotive-scroll';
 import Login from './pages/Login'
 import Register from './pages/Register'
+import Protected from './services/Protected'
+import Home from './components/Home'
 const App = () => {
 
   const locomotiveScroll = new LocomotiveScroll();
@@ -18,17 +20,21 @@ const App = () => {
     <div className='overflow-hidden'>
       <Navbar />
       <Routes>
-        <Route path='/' element={<Body />} />
-        <Route path='/menu' element={<Menu />} />
-        <Route path='/location' element={<Location />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/' element={<Protected />}>
+          <Route path='/' element={<Body />} />
+          <Route path='/home' element ={<Home/>}/>
+          <Route path='/menu' element={<Menu />} />
+          <Route path='/location' element={<Location />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+        </Route>
         <Route path='/login' element={<Login />} />
-        <Route path='/register' element={<Register/>}/>
+        <Route path='/register' element={<Register />} />
+      
       </Routes>
-      <About />
-      <Contact />
-      <Footer />
+
+      <Footer/>
+
     </div>
   )
 }
